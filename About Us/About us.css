@@ -1,0 +1,484 @@
+/*---------------Netivigation Bar--------------*/
+/*พื้นหลังแท้กสีดำ*/
+@import url('https://fonts.googleapis.com/css2?family=Black+Han+Sans&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+
+@font-face {
+    font-family: "MainFont";
+    src:url(https://github.com/wt-imonnu/MauLaTy/blob/Template/Font/TH%20K2D%20July8.ttf); 
+    }
+    
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    
+    html {
+        scroll-behavior: smooth;
+    }
+    
+    body {
+        background-color: rgb(18, 3, 27);
+        font-family: "Raleway", sans-serif;
+    }
+    
+    .container {
+        width: 100%;
+        margin: 0 auto;
+    }
+    
+    .logo {
+        display: flex;
+        align-items: center;
+        padding: 20px;
+    }
+    
+    /*เพิ่ม Hover ใส่ Link*/
+    .alo {
+        color: white;
+        text-decoration: none;
+    }
+    .alo:hover {
+        color: #ff00c8;
+        cursor: pointer;
+    }
+    /*------------------*/
+    
+    
+    .logo img {
+        width: 35px;
+        margin-right: 5px;
+    }
+    
+    header {
+        position: fixed;
+        top: 0;
+        width: 100%;
+        background-color: #000;
+        color: white;
+    }
+    
+    nav {
+        display: flex;
+        justify-content: space-between;
+        height: 70px;
+        align-items: center;
+    }
+    
+    nav ul {
+        display: flex;
+    }
+    
+    nav ul li {
+        list-style: none;
+    }
+    
+    nav ul li a {
+        border-left: 2px solid white;
+        text-decoration: none;
+        color: white;
+        padding: 0 20px;
+    }
+    
+    nav ul li a:hover {
+        color: #ff00c8;
+    }
+    
+    section {
+        height: auto;
+    }
+    
+    .content-categories {
+        margin-top: 100px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    /*head New*/
+    .header-name:nth-child(1) h1 {
+        color: white;
+        font-size: 6vw;
+        font-family: Tangerine;
+        line-height: 70px;
+    }
+    
+    .header-name:nth-child(2) h1 {
+        color: rgba(255, 255, 255, 0.4);
+        font-size: 4vw;
+        font-family: Tangerine;
+        line-height: 80px;
+    }
+    
+    /*-----custom-select-----*/
+    .adrop {
+        font-family: Arial;
+        border: none;
+        text-decoration: none;
+        padding: 0 1px;
+        color: white;
+        text-align: left;
+    }
+    
+    .dropdown-wrapper {
+        position: relative;
+        min-width: 150px;
+    }
+    
+    .dropdown-btn {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        cursor: pointer;
+        border-left: 2px solid white;
+        color: white;
+        padding: 0 15px;
+    }
+    
+    .dropdown-btn:hover {
+        color: #ff00c8;
+    }
+    
+    .dropdown-menu {
+        position: absolute;
+        right: 0;
+        width: 100%;
+        margin-top: 5px;
+        padding: 5px 0;
+        background-color: #000;
+        box-shadow: 0 5px 15px #190161;
+        opacity: 0.2;
+        transform: scale(0);
+        transform-origin: top;
+        transition: transform 0.3s cubic-bezier(0.165, 0.84, 0.44, 1), opacity 0.3s ease;
+    }
+    
+    .dropdown-menu.open {
+        opacity: 1;
+        transform: scale(1);
+    }
+    
+    .dropdown-menu .item {
+        padding: 8px 16px;
+        cursor: pointer;
+        display: flex;
+        justify-content: left;
+        align-items: center;
+    }
+    
+    .dropdown-menu .item:hover {
+        background-color: #555;
+    }
+    
+    .dropdown-menu .item.active {
+        font-weight: bold;
+    }
+    /*Fran*/
+    html {
+        box-sizing: border-box;
+      }
+      
+      *, *:before, *:after {
+        box-sizing: inherit;
+      }
+      
+    
+    body {
+      flex-direction: column; /* Stack sections vertically */
+      background-color: rgb(18, 3, 27);
+    }
+    
+    .headertext
+    {
+        color: white;
+    }
+    
+    .container {
+      font-family: "MainFont";
+      display: flex;
+      align-items: center; /* Vertically centers the items */
+      justify-content: center; /* Horizontally centers the items */
+      margin-top: 50px;
+      height: 500px;
+      background-image: url('HOME-bg.png');
+    }
+    
+    .carousel {
+      position: relative;
+      width: 400px;
+      height: 500px;
+      overflow: hidden;
+      margin-right: 20px;
+    }
+    
+    .carousel img {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      opacity: 0;
+      animation: fadeIn 30s infinite;
+    }
+    
+    .carousel img:nth-child(1) {
+      animation-delay: 0s;
+    }
+    .carousel img:nth-child(2) {
+      animation-delay: 3s;
+    }
+    .carousel img:nth-child(3) {
+      animation-delay: 6s;
+    }
+    .carousel img:nth-child(4) {
+      animation-delay: 9s;
+    }
+    .carousel img:nth-child(5) {
+      animation-delay: 12s;
+    }
+    .carousel img:nth-child(6) {
+      animation-delay: 15s;
+    }
+    .carousel img:nth-child(7) {
+      animation-delay: 18s;
+    }
+    .carousel img:nth-child(8) {
+      animation-delay: 21s;
+    }
+    .carousel img:nth-child(9) {
+      animation-delay: 24s;
+    }
+    .carousel img:nth-child(10) {
+      animation-delay: 27s;
+    }
+    
+    @keyframes fadeIn {
+      0%, 12.5%, 100% {
+          opacity: 0;
+      }
+      12.5%, 25% {
+          opacity: 1;
+      }
+      25%, 87.5% {
+          opacity: 0;
+      }
+    }
+    
+    .text-container {
+      position: relative;
+      font-size: 2.5vw;
+      font-weight: 400;
+    }
+    
+    .typing-text {
+      margin-left: 1vw;
+      font-size: 2.5vw;
+      font-weight: 1000;
+      max-width: 100%;
+      position: absolute;
+      display: inline-block;
+      color:orange;
+      text-align: center;
+      -webkit-animation: glow 1s ease-in-out infinite alternate;
+      -moz-animation: glow 1s ease-in-out infinite alternate;
+      animation: glow 1s ease-in-out infinite alternate;
+    }
+    
+    @-webkit-keyframes glow {
+      from {
+        text-shadow: 0 0 10px orange, 0 0 20px #fff, 0 0 30px #e60073, 0 0 40px #e60073, 0 0 50px #e60073, 0 0 60px #e60073, 0 0 70px #e60073;
+      }
+      to {
+        text-shadow: 0 0 20px #fff, 0 0 30px orange, 0 0 40px orange, 0 0 50px orange, 0 0 60px orange, 0 0 70px orange, 0 0 80px orange;
+      }
+    }
+    
+    .typing-text::after {
+      content: "|";
+      background-color: orange;
+      position: relative;
+      width: 15px;
+      height: 100%;
+      animation: cursor 0.6s infinite;
+    }
+    @keyframes cursor {
+      0% { opacity: 1; }
+      50% { opacity: 0; }
+      100% { opacity: 1; }
+    }
+    .subtext {
+        font-family: Arial;
+        color:white;
+        font-size: 1.5vw;
+        margin-top: 1vh;
+    }
+    
+    .column {
+        float:left;
+        margin: 5%;
+        width: 33%;
+        flex-direction: row;
+      }
+      
+    
+    
+      .team-container {
+        margin-top: 5%;
+        display: flex;
+        flex-wrap: wrap;                  /*  allow items to wrap  */
+        justify-content: center;
+        gap: 25px ;
+      }
+      .team-member {
+        font-family: Arial;
+        display: none; /* Hide all team members by default */
+        flex-basis: calc(100% - 10); /*  subtract the margin from the width  */
+        color: white;
+        margin: 10px;
+        box-sizing: border-box; 
+        text-align: center;
+        word-wrap: break-word;
+        box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+      }
+    
+      .team-member.active{
+        display: block; /* Show active team members */
+      }
+    
+      .team-member img {
+        width: 500px;
+        height: auto;
+      }
+      .team-member .name {
+        color: #ff00c8;
+        font-weight: bolder;
+        font-size: 4vh;
+        word-break: break-all;
+      }
+      .team-member .title {
+        color: grey;
+        word-break: break-all;
+      }
+      .team-member .detail {
+        color: white;
+        font-size: 2vh;
+        word-break: break-all;
+        margin-bottom: 20px;
+      }
+    
+      .RoleButtons {
+        display: flex;
+        justify-content: center; /* Center the buttons horizontally */
+        align-items: center; /* Center the buttons vertically if needed */
+        gap: 10px; /* Add some space between the buttons */
+        margin-top: 20px; /* Optional: Add some top margin */
+      }
+      
+      .RoleButton {
+        font-family: "MainFont";
+        font-size: 17px;
+        border: none;
+        padding: 1em 1.5em;
+        color: #0a2244;
+        text-transform: uppercase;
+        position: relative;
+        transition: 0.5s ease;
+        cursor: pointer;
+      }
+      
+      .RoleButton::before {
+        content: "";
+        border-radius: 15px;
+        position: absolute;
+        left: 0;
+        bottom: 0px;
+        height: 4px;
+        width: 0;
+        background-color: orange;
+        transition: 0.5s ease;
+      }
+      
+      .RoleButton:hover,
+      .RoleButton.active {
+        color: Orange;
+        transition-delay: 0.1s;
+      }
+      
+      .RoleButton:hover::before,
+      .RoleButton.active::before {
+        width: 100%;
+      }
+      
+      .RoleButton::after {
+        content: "";
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        height: 0;
+        width: 100%;
+        background-color: orange;
+        transition: 0.4s ease;
+        z-index: -1;
+      }
+
+    /*ฟุตเตอร์ของเทน*/
+    footer {
+        background-color: #333;
+        color: white;
+        text-align: center;
+        padding: 20px 0;
+        width: 100%;
+        display: none; /* Initially hide the footer */
+        position: relative;
+        bottom: 0;
+    }
+
+    .footer-content {
+        max-width: 1200px;
+        margin: auto;
+        padding: 20px;
+    }
+
+    .footer-content p {
+        margin: 0;
+        padding: 0;
+    }
+
+    .socials {
+        list-style: none;
+        padding: 0;
+        margin: 20px 0 0 0;
+        display: flex;
+        justify-content: center;
+    }
+
+    .socials li {
+        margin: 0 10px;
+    }
+
+    .socials a {
+        color: white;
+        text-decoration: none;
+        font-size: 20px;
+    }
+
+    .socials a:hover {
+        color: #ff00c8;
+    }
+
+    /*Back to top เก่า*/
+    .box {
+        display: block;
+    }
+
+    .arrowtop{
+        position: fixed;
+        bottom: 0;
+        margin-right: 27px;
+        margin-bottom: 80px;
+        right: 0;
+    }
+    .arrowtop i{
+        background: #474747;
+        color: #ffffff;
+        padding: 20px 30px;
+        border-radius: 100px;
+    }

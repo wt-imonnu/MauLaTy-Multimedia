@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="cs.js" defer></script>
+        <title>About us</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.0/css/all.min.css"
+        integrity="sha512-9xKTRVabjVeZmc+GUW8GgSmcREDunMM+Dt/GrzchfN8tkwHizc5RP4Ok/MXFFy5rIjJjzhndFScTceq5e6GvVQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="stylesheet" href="About us.css">
+    </head>
+
+    <body>
+        <section id="up"></section> <!--กำหนดจุดบนข้องเว็บ ให้เหนือ body อยู่บนสุด-->
+
+        <!----Nav bar + Custom Select-->
+            <header style="z-index: 999;">
+                <nav>
+                    <div class="logo">
+                        <img src="LOGO2.png" alt="logo"><a class="alo" href="">Mau La Ty MultiMedia</a>
+                    </div>
+                    <ul>
+                        <li class="dropdown-wrapper" style="z-index: 998;">
+                            <div class="dropdown-btn">
+                                <span id="selected-item">Product</span>
+                                <span><i class="fa-solid fa-caret-down"></i></span>
+                            </div>
+        
+                            <div class="dropdown-menu">
+                                <div class="item"><a class="adrop" href="" target="_blank">Graphic</a></div>
+                                <div class="item"><a class="adrop" href="" target="_blank">3D Modeling</a></div>
+                                <div class="item"><a class="adrop" href="" target="_blank">Production</a></div>
+                            </div>
+                        </li>
+                        <li><a href="">About us</a></li>
+                        <li><a href="">Contact</a></li>
+                    </ul>
+                </nav>
+            </header>
+
+<body>
+
+<div class="container">
+  
+  <div class="carousel">
+        <img src="Praewa.png" alt="CEO">
+        <img src="Mean.png" alt="Co-Founder">
+        <img src="Ten.png" alt="Content Writers"> 
+        <img src="Dear.png" alt="Artists">
+        <img src="Irin.png" alt="3D Modelers">
+        <img src="May.png" alt="Web Designers">
+        <img src="Juno.png" alt="Graphic Designer">
+        <img src="New.png" alt="Character Designers">
+        <img src="Ping.png" alt="Photographers">
+        <img src="Stefan.png" alt="Programmers">
+
+  </div>
+  <div class="text-container">
+    <span class="headertext">We're a group of</span><div class="typing-text" id="typing-text"></div>
+    <div class="subtext">Helping you and other business owners initiate the Digital Transformation,</div>
+    <div class="subtext">And these people are the right tool for the job.</div>
+</div>
+
+<script src="About us.js"></script>
+
+</div>
+
+<div class="RoleButtons">
+<button class ="RoleButton" onclick="toggleRole('All')">All Roles</button>
+<button class ="RoleButton" onclick="toggleRole('Graphic')">Graphic/Motion Designers</button>
+<button class ="RoleButton" onclick="toggleRole('Production')">Production/Marketing Agents</button>
+<button class ="RoleButton" onclick="toggleRole('Developer')">Developers</button>
+</div>
+
+<div class="team-container"> 
+  <div class="team-member" data-role="Graphic">
+    <img src="Praewa1.jpg" alt="Name 2">
+    <p class="name">ภาวิณีย์ อุดมกรธนเสฏฐ์</p>
+    <p class="title">CEO, Lead Artist</p>
+    <p class="detail">ประธานบริษัท รับหน้าที่นั่งเก้าอี้ นักวาดไม่เคยเสร็จอันดับ 1</p>
+  </div>
+  <div class="team-member" data-role="Graphic">
+      <img src="Juno1.jpg"alt="Name 1">
+      <p class="name">กวินทรา ศักดิ์วิเศษชัยกุล</p>
+      <p class="title">COO, Principal Artist</p>
+      <p class="detail">ว่าที่ประธานคนต่อไป เพราะรอประธานคนปัจจุบันลาสังขาร</p>
+  </div>
+  <div class="team-member" data-role="Production">
+      <img src="Mean1.jpg" alt="Name 2">
+      <p class="name">สุพิชญา ทรักษา</p>
+      <p class="title">Co-Founder, Marketing Strategist</p>
+      <p class="detail">รองประธาน รับหน้าที่เป็นเซลล์ที่มีเก้าอี้รองประธานนั่ง</p>
+  </div>
+  <div class="team-member" data-role="Graphic">
+    <img src="New1.jpg" alt="Name 2">
+    <p class="name">วิมลณัฐ ทองแจ่ม</p>
+    <p class="title">Artist, Character Designer</p>
+    <p class="detail">เลขา รับหน้าที่เลียแข็งเลียขาทุกคนในบริษัท</p>
+  </div>
+  <div class="team-member" data-role="Developer">
+    <img src="May1.jpg" alt="Name 3">
+    <p class="name">กัญญาวีร์ มโนการุณยวงศ์</p>
+    <p class="title">UI/UX Designer</p>
+    <p class="detail">เมย์ไหนที่ใครในบริษัทก็สงสัย รับหน้าที่ออกแบบ UX/UI พิศวง</p>
+</div>
+<div class="team-member" data-role="Production">
+  <img src="Irin1.jpg" alt="Name 2">
+  <p class="name">ธวัลกานต์ อนุนิวัฒน์</p>
+  <p class="title">3D Modeler, Photographer</p>
+  <p class="detail">หมาดาราหน้าบริษัท รับหน้าที่เป็นหมาถือกล้อง</p>
+</div>
+<div class="team-member" data-role="Graphic">
+  <img src="Ping1.jpg" alt="Name 2">
+  <p class="name">ปราญชลี จินดาสถาน</p>
+  <p class="title">Videographer, Video Editor</p>
+  <p class="detail">ซินแสประจำบริษัท รับหน้าที่กำกับควบคุมลูกดวงในบริษัท</p>
+</div>
+<div class="team-member" data-role="Production">
+    <img src="Dear1.jpg" alt="Name 2">
+    <p class="name">รัตนาพร ขุนรามวงศ์</p"esigner</p>
+    <p class="title">Content Writer, Graphic Designer</p>
+    <p class="detail">นักเขียนเกผมยาว รับหน้าที่เขียนบล็อก</p>
+  </div>
+<div class="team-member" data-role="Developer">
+  <img src="Stefan1.jpg" alt="Name 2">
+  <p class="name">พงศภัค ธิติโยธิน</p>
+  <p class="title">Programmer, Back-End Developer</p>
+  <p class="detail">โปรแกรมเมอร์ รับหน้าที่เป็นคนปกติที่สุดในบริษัท</p>
+</div>
+<div class="team-member" data-role="Production">
+  <img src="Ten1.jpg" alt="Name 2">
+  <p class="name">ณัฐชินาธิป เพ็รชเกลี้ยง</p>
+  <p class="title">Actor ,Content Writer</p>
+  <p class="detail"> อินฟลูดังท่านหนึ่ง รับหน้าที่เป็นพรีเซนเตอร์ดาราดังเปรี้ยงปร้าง</p>
+</div>
+
+</div>
+
+
+<script>
+  function toggleRole(role) {
+      // Hide all team members
+      document.querySelectorAll('.team-member').forEach(member => {
+          member.classList.remove('active');
+      });
+
+      // Show team members with the selected role
+      if (role === 'All') {
+          document.querySelectorAll('.team-member').forEach(member => {
+              member.classList.add('active');
+          });
+      } else {
+          document.querySelectorAll(`.team-member[data-role="${role}"]`).forEach(member => {
+              member.classList.add('active');
+          });
+      }
+
+      // Update button active state
+      document.querySelectorAll('.RoleButton').forEach(button => {
+          button.classList.remove('active');
+      });
+      document.querySelector(`.RoleButton[onclick="toggleRole('${role}')"]`).classList.add('active');
+  }
+
+  // Set "All" role active by default
+  document.addEventListener('DOMContentLoaded', () => {
+      toggleRole('All');
+  });
+</script>
+
+<!--ฟุตเตอร์ของเทน-->
+<footer id="footer">
+    <div class="footer-content">
+        <p>&copy; Mau La Ty Media LTD. All rights reserved.</p>
+        <ul class="socials">
+            <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+            <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+            <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+            <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
+        </ul>
+    </div>
+</footer>
+
+<script>
+    window.onscroll = function() {
+        var footer = document.getElementById("footer");
+        if ((window.innerHeight + window.scrollY) >= document.body.offsetHeight) {
+            footer.style.display = "block";
+        } else {
+            footer.style.display = "none";
+        }
+    };
+</script>
+
+<div class="arrowtop">
+    <a href=""><i class="fa-solid fa-arrow-up"></i></a>
+</div>
+
+</body>
+
+</html>

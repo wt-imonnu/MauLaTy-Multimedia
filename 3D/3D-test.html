@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="cs.js" defer></script>
+    <title>3D MODELING</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.0/css/all.min.css"
+        integrity="sha512-9xKTRVabjVeZmc+GUW8GgSmcREDunMM+Dt/GrzchfN8tkwHizc5RP4Ok/MXFFy5rIjJjzhndFScTceq5e6GvVQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="3D-test.css">
+    <script src="3D-test.js"></script>
+</head>
+
+<body>
+    <section id="up"></section> <!--กำหนดจุดบนข้องเว็บ ให้เหนือ body อยู่บนสุด-->
+
+<!----Nav bar + Custom Select-->
+    <header style="z-index: 999;">
+        <nav>
+            <div class="logo">
+                <img src="LOGO2.png" alt="logo"><a class="alo" href="">Mau La Ty MultiMedia</a>
+            </div>
+            <ul>
+                <li class="dropdown-wrapper" style="z-index: 998;">
+                    <div class="dropdown-btn">
+                        <span id="selected-item">Product</span>
+                        <span><i class="fa-solid fa-caret-down"></i></span>
+                    </div>
+
+                    <div class="dropdown-menu">
+                        <div class="item"><a class="adrop" href="" target="_blank">Graphic</a></div>
+                        <div class="item"><a class="adrop" href="" target="_blank">3D Modeling</a></div>
+                        <div class="item"><a class="adrop" href="" target="_blank">Production</a></div>
+                    </div>
+                </li>
+                <li><a href="">About us</a></li>
+                <li><a href="">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <div class="container">
+        <div class="content-categories">
+            <div class="header-name">
+                <h1>Mixed Dimension</h1>
+            </div>
+            <div class="header-name">
+                <h1>Smooth Finish</h1>
+            </div>
+            <div class="border-gradient">
+                <p>3D MODELING</p>
+            </div>
+            <div class="choose-categories">
+                <h2>— CHOOSE YOUR CATEGORY —</h2>
+            </div>
+        </div>
+    </div>
+
+    <section class="gallery">
+        <div class="container">
+            <div class="container2">
+                <!-- Filter Section -->
+                <div class="gallery-filter">
+                    <span class="filter-item active" data-filter="all">Show All</span>
+                    <span class="filter-item" data-filter="Prop">Prop</span>
+                    <span class="filter-item" data-filter="Scene">Scene</span>
+                    <span class="filter-item" data-filter="Iso">Isometric room</span>
+                </div>
+
+                <!-- Image Gallery -->
+                <div class="row">
+                    <!-- photography -->
+                    <div class="box Prop">
+                        <img id="myImg" src="oniniri01.png" alt="Click to open modal">
+                        <div id="myModal" class="modal">
+                            <div class="modal-content">
+                                <span class="close">&times;</span>
+                                <div class="modal-img">
+                                    <img src="oniniri01.png">
+                                </div>
+                                <div class="modal-text">
+                                    <h1>Oniniri Original</h1>
+                                    <p>
+                                        Artists : Thawankarn Anuniwat<br>
+                                        โอนินิริ เป็นคาแรคเตอร์ที่มาจาก โอนิกิริ และ นิริ ซึ่งเป็นฉายาของธวัลกานต์
+                                        เจ้าของผลงาน จึงเป็นต้นกำเนิดของ Collection ข้าวปั้นสุดน่ารัก
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="box Prop">
+                        <img id="myImg" src="oniniri02.png" alt="Click to open modal">
+                        <div id="myModal" class="modal">
+                            <div class="modal-content">
+                                <span class="close">&times;</span>
+                                <div class="modal-img">
+                                    <img src="oniniri02.png">
+                                </div>
+                                <div class="modal-text">
+                                    <h1>Oniniri Halloween</h1>
+                                    <p>
+                                        Artists : Thawankarn Anuniwat<br>
+                                        ต่อเนื่องจาก Oniniri Original มาในธีม ข้าวปั้น Halloween 
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="box Prop">
+                        <img id="myImg" src="oniniri03.png" alt="Click to open modal">
+                        <div id="myModal" class="modal">
+                            <div class="modal-content">
+                                <span class="close">&times;</span>
+                                <div class="modal-img">
+                                    <img src="oniniri03.png">
+                                </div>
+                                <div class="modal-text">
+                                    <h1>Oniniri Loy Kratong</h1>
+                                    Artists : Thawankarn Anuniwat<br>
+                                    <p>
+                                        ถัดจากฮาโลวีน เข้าสู่เทศกาลลอยกระทง พบกับข้าวปั้นในรูปแบบของวัฒนธรรมไทยอย่าง กระทง
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="box Prop">
+                        <img id="myImg" src="prop1.png" alt="Click to open modal">
+                        <div id="myModal" class="modal">
+                            <div class="modal-content">
+                                <span class="close">&times;</span>
+                                <div class="modal-img">
+                                    <img src="prop1.png">
+                                </div>
+                                <div class="modal-text">
+                                    <h1>SVT Cake</h1>
+                                    <p>
+                                        Artists : Thawankarn Anuniwat<br>
+                                        ฉลองครบรอบ 9 ปีของการเดบิวต์ศิลปินวง SVT
+                                        เค้กสีชมพู ฟ้า มีดีเทลประดับเพชร ซึ่งเป็นคอนเซปต์ขอวง
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="box Prop">
+                        <img id="myImg" src="prop2.png" alt="Click to open modal">
+                        <div id="myModal" class="modal">
+                            <div class="modal-content">
+                                <span class="close">&times;</span>
+                                <div class="modal-img">
+                                    <img src="prop2.png">
+                                </div>
+                                <div class="modal-text">
+                                    <h1>Donut</h1>
+                                    <p>
+                                        Artists : Thawankarn Anuniwat<br>
+                                        โดนัทช็อคโกแลตเสมือนจริง
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="box Scene">
+                        <img id="myImg" src="scene1.png" alt="Click to open modal">
+                        <div id="myModal" class="modal">
+                            <div class="modal-content">
+                                <span class="close">&times;</span>
+                                <div class="modal-img">
+                                    <img src="scene1.png">
+                                </div>
+                                <div class="modal-text">
+                                    <h1>Christmas House</h1>
+                                    <p>
+                                        Artists : Thawankarn Anuniwat<br>
+                                        บ้านอันอบอุ่นในเทศกาลคริสต์มาส ใช้สีโทนเย็นแสดงถึงความหนาวเหน็บภายนอก
+                                        แต่ตัวบ้านและภายใน ใช้สีโทนอุ่น เพื่อให้เกิดการตัดกันของสี ทำให้บ้านมีความเด่น
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="box Scene">
+                        <img id="myImg" src="scene2.png" alt="Click to open modal">
+                        <div id="myModal" class="modal">
+                            <div class="modal-content">
+                                <span class="close">&times;</span>
+                                <div class="modal-img">
+                                    <img src="scene2.png">
+                                </div>
+                                <div class="modal-text">
+                                    <h1>Fear</h1>
+                                    <p>
+                                        Artists : Thawankarn Anuniwat<br>
+                                        ได้รับแรงบันดาลใจมาจากฉากใน MV เพลง Fear-SEVENTEEN
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="box Scene">
+                        <img id="myImg" src="scene3.png" alt="Click to open modal">
+                        <div id="myModal" class="modal">
+                            <div class="modal-content">
+                                <span class="close">&times;</span>
+                                <div class="modal-img">
+                                    <img src="scene3.png">
+                                </div>
+                                <div class="modal-text">
+                                    <h1>Home run</h1>
+                                    <p>
+                                        Artists : Thawankarn Anuniwat<br>
+                                        ได้รับแรงบันดาลใจมาจากฉากใน MV เพลง Home run-SEVENTEEN
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- reel -->
+                    <div class="box Scene">
+                        <img id="myImg" src="scene4.png" alt="Click to open modal">
+                        <div id="myModal" class="modal">
+                            <div class="modal-content">
+                                <span class="close">&times;</span>
+                                <div class="modal-img">
+                                    <img src="scene4.png">
+                                </div>
+                                <div class="modal-text">
+                                    <h1>Super</h1>
+                                    <p>
+                                        Artists : Thawankarn Anuniwat<br>
+                                        ได้รับแรงบันดาลใจมาจากฉากใน MV เพลง Super-SEVENTEEN
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="box Iso">
+                        <img id="myImg" src="isoroom1.png" alt="Click to open modal">
+                        <div id="myModal" class="modal">
+                            <div class="modal-content">
+                                <span class="close">&times;</span>
+                                <div class="modal-img">
+                                    <img src="isoroom1.png">
+                                </div>
+                                <div class="modal-text">
+                                    <h1>Niri Cafe</h1>
+                                    <p>
+                                        Artists : Thawankarn Anuniwat<br>
+                                        Isometric room - Cafe
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="box Iso">
+                        <img id="myImg" src="isoroom2.png" alt="Click to open modal">
+                        <div id="myModal" class="modal">
+                            <div class="modal-content">
+                                <span class="close">&times;</span>
+                                <div class="modal-img">
+                                    <img src="isoroom2.png">
+                                </div>
+                                <div class="modal-text">
+                                    <h1>Japanese Room</h1>
+                                    <p>
+                                        Artists : Thawankarn Anuniwat<br>
+                                        Isometric room - Japanese Room
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Flim -->
+                    <div class="box Iso">
+                        <img id="myImg" src="isoroom3.png" alt="Click to open modal">
+                        <div id="myModal" class="modal">
+                            <div class="modal-content">
+                                <span class="close">&times;</span>
+                                <div class="modal-img">
+                                    <img src="isoroom3.png">
+                                </div>
+                                <div class="modal-text">
+                                    <h1>Thai House</h1>
+                                    <p>
+                                        Artists : Thawankarn Anuniwat<br>
+                                        Isometric room - Thai House
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+    </section>
+
+    <table>
+        <tr style="height: 200px;"></tr>
+    </table>
+
+    <!--ฟุตเตอร์ของเทน-->
+    <footer id="footer">
+        <div class="footer-content">
+            <p>&copy; Mau La Ty Media LTD. All rights reserved.</p>
+            <ul class="socials">
+                <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
+            </ul>
+        </div>
+    </footer>
+
+    <script>
+        window.onscroll = function() {
+            var footer = document.getElementById("footer");
+            if ((window.innerHeight + window.scrollY) >= document.body.offsetHeight) {
+                footer.style.display = "block";
+            } else {
+                footer.style.display = "none";
+            }
+        };
+    </script>
+
+    <div class="arrowtop">
+        <a href=""><i class="fa-solid fa-arrow-up"></i></a>
+    </div>
+
+</body>
+
+</html>
